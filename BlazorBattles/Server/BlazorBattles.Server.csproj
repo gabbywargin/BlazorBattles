@@ -31,4 +31,7 @@
     <Folder Include="Data\" />
     <Folder Include="Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="blazorbattles.db-shm" />
+  </ItemGroup>
 </Project>
