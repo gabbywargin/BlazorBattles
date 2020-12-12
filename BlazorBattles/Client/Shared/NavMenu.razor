@@ -3,7 +3,8 @@
 @inject NavigationManager NavigationManager
 
 <div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href=""><img src="icons/W_Axe013.png" /> Gabby's Blazor Battles</a>
+    <a class="navbar-brand" href=""><img src="icons/W_Axe013.png" />
+    <font style="color:goldenrod; font-family:fantasy">Gabby's Blazor Battles</font></a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,27 +14,43 @@
     <ul class="nav flex-column">
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
+                <span class="oi oi-home" aria-hidden="true"></span>
+                <font style="color:goldenrod; font-family:fantasy"> Home </font>
+</NavLink>
         </li>
         <AuthorizeView>
             <Authorized>
                 <li class="nav-item px-3">
                     <NavLink class="nav-link" href="build">
-                        <span class="oi oi-wrench" aria-hidden="true"></span> Build
-                    </NavLink>
+                        <span class="oi oi-wrench" aria-hidden="true"></span>
+                        <font style="color:goldenrod; font-family:fantasy">Build</font>
+</NavLink>
                 </li>
                 <li class="nav-item px-3">
                     <NavLink class="nav-link" href="army">
-                        <span class="oi oi-people" aria-hidden="true"></span> Army
-                    </NavLink>
+                        <span class="oi oi-people" aria-hidden="true"></span>
+                        <font style="color:goldenrod; font-family:fantasy">Army</font>
+</NavLink>
                 </li>
 
                 <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="leaderboard">
+                        <span class="oi oi-list" aria-hidden="true"></span>
+                        <font style="color:goldenrod; font-family:fantasy">Leaderboard</font>
+</NavLink>
+                </li>
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="history">
+                        <span class="oi oi-clock" aria-hidden="true"></span>
+                        <font style="color:goldenrod; font-family:fantasy">History</font>
+</NavLink>
+                </li>
+                <li class="nav-item px-3">
                     <a class="nav-link" @onclick="Logout" style="cursor: pointer">
-                        <span class="oi oi-account-logout" aria-hidden="true"></span>Logout
+                        <span class="oi oi-account-logout" aria-hidden="true"></span>
+                        <font style="color:goldenrod; font-family:fantasy">Logout</font>
 
-                    </a>
+</a>
                 </li>
             </Authorized>
             <NotAuthorized>
